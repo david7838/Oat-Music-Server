@@ -6,13 +6,13 @@ import java.util.UUID
 
 data class BeerDto (
     val id: UUID,
-    val version: Int,
-    val createdDate: LocalDateTime,
-    val lastModifiedDate: LocalDateTime,
-    val beerName: String,
-    val beerStyle: BeerStyleEnum,
-    val price: BigDecimal,
-    val quantityOnHand: Int,
-    val upc: Long,
+    val version: Int = 1,
+    val createdDate: LocalDateTime = LocalDateTime.now(),
+    val lastModifiedDate: LocalDateTime = LocalDateTime.now(),
+    val beerName: String = "default name",
+    val beerStyle: BeerStyleEnum = BeerStyleEnum.ALE,
+    val price: BigDecimal = BigDecimal(1),
+    val quantityOnHand: Int = 1,
+    val upc: Long = 100L,
         ){
 }
