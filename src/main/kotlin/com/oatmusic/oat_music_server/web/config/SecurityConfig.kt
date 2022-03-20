@@ -21,7 +21,7 @@ OAuth2ImportSelector：判斷環境中是否有OAuth2的ClientRegistration，在
 被標註@EnableGlobalAuthentication的類別可用來配置AuthenticationManagerBuilder，
 所以＠EnableWebSecurity也有同樣的效果。
  */
-@Profile("test")
+@Profile("test", "dev")
 @EnableWebSecurity
 class SecurityConfig : WebSecurityConfigurerAdapter() {
     override fun configure(web: WebSecurity) {
