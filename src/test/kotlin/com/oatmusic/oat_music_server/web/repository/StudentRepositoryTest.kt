@@ -20,11 +20,11 @@ internal class StudentRepositoryTest(
         val actual = 0
         print(allStudent.size)
         //then
-        Assertions.assertTrue(allStudent.size == 5 )
+        Assertions.assertTrue(allStudent.size >= 5 )
 
     }
 
-//    @Test
+    @Test
     fun `should create one student`(){
         //given
         val student = StudentEntity(
